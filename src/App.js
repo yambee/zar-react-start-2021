@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<>
-			<Header title="Заголовок" descr="Описание" />
+			<Header title="Плейсходлер для 3 домашки" descr="Описание" />
 			<Layout />
 			<Layout />
 			<Layout />
