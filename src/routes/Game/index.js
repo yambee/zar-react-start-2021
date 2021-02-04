@@ -1,12 +1,13 @@
-const GamePage = () => {
+const GamePage = ({ onChangePage }) => {
 	console.log('GamePage');
-	const handleClick = ({ onChangePage }) => {
+	const handleClick = () => {
 		console.log(onChangePage);
 		onChangePage && onChangePage('app');
 	};
 	return (
 		<>
-			<div>This is Game Page!!</div>;<button onClick={handleClick}>To HOMEPAGE</button>;
+			<div>This is Game Page!!</div>
+			<button onClick={handleClick}>To HOMEPAGE</button>
 		</>
 	);
 };
