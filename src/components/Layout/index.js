@@ -1,4 +1,5 @@
 import s from './style.module.css';
+import cn from 'classnames';
 
 const Layout = ({ id, title, urlBg, colorBg, children }) => {
 	const rootUrlBg = urlBg ? { backgroundImage: `url('${urlBg}')` } : {};
@@ -13,7 +14,8 @@ const Layout = ({ id, title, urlBg, colorBg, children }) => {
 						<h3>{title}</h3>
 						<span className={s.separator}></span>
 					</div>
-					<div className={`${s.desc} ${s.full}`}>{children}</div>
+					{/* <div className={`${s.desc} ${s.full}`}>{children}</div> */}
+					<div className={cn(s.desc, s.full)}>{children}</div>
 				</article>
 			</div>
 		</section>
